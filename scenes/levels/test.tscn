@@ -8,10 +8,11 @@ size = Vector2(32, 32)
 
 [node name="Test" type="Node2D" unique_id=1915105611]
 
-[node name="Player" parent="." unique_id=2036891840 instance=ExtResource("1_8153q")]
+[node name="Player" parent="." unique_id=2036891840 node_paths=PackedStringArray("camera") instance=ExtResource("1_8153q")]
 position = Vector2(378, 277)
+camera = NodePath("camera")
 
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1385869598]
+[node name="camera" type="Camera2D" parent="Player" unique_id=1385869598]
 zoom = Vector2(1.2, 1.2)
 process_callback = 0
 position_smoothing_enabled = true
