@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://me023x0wkmvn"]
+
+[ext_resource type="PackedScene" uid="uid://b77y4lbwhjyqe" path="res://scenes/characters/player.tscn" id="1_8153q"]
+[ext_resource type="Texture2D" uid="uid://b6u0n5keoof2f" path="res://assets/sprites/square.png" id="2_52kye"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_52kye"]
+size = Vector2(32, 32)
+
+[node name="Test" type="Node2D" unique_id=1915105611]
+
+[node name="Player" parent="." unique_id=2036891840 instance=ExtResource("1_8153q")]
+position = Vector2(378, 277)
+
+[node name="Floor" type="StaticBody2D" parent="." unique_id=1760372110]
+position = Vector2(598, 460)
+scale = Vector2(26.960003, 1)
+
+[node name="spr" type="Sprite2D" parent="Floor" unique_id=849375148]
+modulate = Color(0.5959538, 0.4860841, 0.018981228, 1)
+texture = ExtResource("2_52kye")
+
+[node name="col" type="CollisionShape2D" parent="Floor" unique_id=1307070375]
+shape = SubResource("RectangleShape2D_52kye")
+
+[node name="Floor2" type="StaticBody2D" parent="." unique_id=2106932259]
+position = Vector2(612, 344)
+scale = Vector2(4.0800037, 1)
+
+[node name="spr" type="Sprite2D" parent="Floor2" unique_id=2026628952]
+modulate = Color(0.5959538, 0.4860841, 0.018981228, 1)
+texture = ExtResource("2_52kye")
+
+[node name="col" type="CollisionShape2D" parent="Floor2" unique_id=1535573234]
+shape = SubResource("RectangleShape2D_52kye")
+
+[node name="Floor3" type="StaticBody2D" parent="." unique_id=1900953015]
+position = Vector2(823, 252)
+scale = Vector2(4.0800037, 1)
+
+[node name="spr" type="Sprite2D" parent="Floor3" unique_id=392068399]
+modulate = Color(0.5959538, 0.4860841, 0.018981228, 1)
+texture = ExtResource("2_52kye")
+
+[node name="col" type="CollisionShape2D" parent="Floor3" unique_id=1813242776]
+shape = SubResource("RectangleShape2D_52kye")
+
+[node name="Floor4" type="StaticBody2D" parent="." unique_id=1071149922]
+position = Vector2(1013, 163)
+scale = Vector2(4.0800037, 1)
+
+[node name="spr" type="Sprite2D" parent="Floor4" unique_id=257257680]
+modulate = Color(0.5959538, 0.4860841, 0.018981228, 1)
+texture = ExtResource("2_52kye")
+
+[node name="col" type="CollisionShape2D" parent="Floor4" unique_id=2044891628]
+shape = SubResource("RectangleShape2D_52kye")
