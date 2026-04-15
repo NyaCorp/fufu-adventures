@@ -10,7 +10,11 @@ size = Vector2(32, 32)
 script = ExtResource("1_yewv4")
 
 [node name="spr" type="Sprite2D" parent="." unique_id=472104206]
+modulate = Color(1, 0.12156863, 1, 1)
 texture = ExtResource("1_rp718")
 
 [node name="col" type="CollisionShape2D" parent="." unique_id=374424005]
 shape = SubResource("RectangleShape2D_rp718")
+
+[node name="camera2d" type="Camera2D" parent="." unique_id=1418491829]
+offset = Vector2(0, -170)
