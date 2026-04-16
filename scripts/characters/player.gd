@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@onready var camera: Camera2D = $camera2d
+@export var camera: Camera2D
 
 const JUMP_VELOCITY = -400.0
 const SPEED = 300.0
