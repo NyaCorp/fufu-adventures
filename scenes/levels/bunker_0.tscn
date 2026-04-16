@@ -32,7 +32,7 @@ camera = NodePath("camera2d")
 
 [node name="camera2d" type="Camera2D" parent="Player" unique_id=1235281715]
 offset = Vector2(0, -60)
-zoom = Vector2(1.8, 1.8)
+zoom = Vector2(1.5, 1.5)
 process_callback = 0
 limit_enabled = false
 limit_left = -653
@@ -58,15 +58,3 @@ position = Vector2(670, -341)
 
 [node name="TestEnemy4" parent="." unique_id=863332007 instance=ExtResource("4_u3avs")]
 position = Vector2(314, -184)
-
-[node name="TestEnemy5" parent="." unique_id=1229129959 instance=ExtResource("4_u3avs")]
-position = Vector2(315, 140)
-
-[node name="TestEnemy6" parent="." unique_id=449942148 instance=ExtResource("4_u3avs")]
-position = Vector2(315, 140)
-
-[node name="TestEnemy7" parent="." unique_id=834565497 instance=ExtResource("4_u3avs")]
-position = Vector2(315, 140)
-
-[node name="TestEnemy8" parent="." unique_id=1028109445 instance=ExtResource("4_u3avs")]
-position = Vector2(315, 140)
