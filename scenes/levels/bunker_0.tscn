@@ -28,8 +28,9 @@ tile_set = SubResource("TileSet_peage")
 [node name="Player" parent="." unique_id=2036891840 instance=ExtResource("2_u3avs")]
 position = Vector2(322, -546)
 
-[node name="camera2d2" type="Camera2D" parent="Player" unique_id=1235281715]
-offset = Vector2(0, -170)
+[node name="camera2d" type="Camera2D" parent="Player" unique_id=1235281715]
+offset = Vector2(0, -60)
+zoom = Vector2(3, 3)
 process_callback = 0
 limit_enabled = false
 limit_left = -653

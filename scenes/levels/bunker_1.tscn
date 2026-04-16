@@ -27,8 +27,9 @@ tile_set = SubResource("TileSet_mlde2")
 [node name="Player" parent="." unique_id=2036891840 instance=ExtResource("2_uiqxb")]
 position = Vector2(-401, 189)
 
-[node name="camera2d2" type="Camera2D" parent="Player" unique_id=928545324]
-offset = Vector2(0, -170)
+[node name="camera2d" type="Camera2D" parent="Player" unique_id=928545324]
+offset = Vector2(0, -150)
+zoom = Vector2(1.5, 1.5)
 process_callback = 0
 limit_enabled = false
 limit_left = -653
