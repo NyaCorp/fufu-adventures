@@ -2,8 +2,8 @@ extends CharacterBody2D
 
 @export var camera: Camera2D
 
-const JUMP_VELOCITY = -400.0
-const SPEED = 300.0
+const JUMP_VELOCITY = -280.0
+const SPEED = 220.0
 
 var isDoubleJump = true
 
@@ -22,7 +22,7 @@ func player_movement(delta: float):
 		velocity.y = JUMP_VELOCITY
 		isDoubleJump = true
 	elif Input.is_action_just_pressed("jump") and !is_on_floor() and isDoubleJump:
-		velocity.y = JUMP_VELOCITY
+		velocity.y = JUMP_VELOCITY - 11
 		isDoubleJump = false
 
 	# Handle horizontal movement
