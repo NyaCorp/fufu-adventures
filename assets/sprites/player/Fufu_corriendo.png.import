@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2kpfyso0qhfs"
-path="res://.godot/imported/fufu_salto.png-798eae524de9753993d6422cecc16c62.ctex"
+uid="uid://c0cfu5arxn6a"
+path="res://.godot/imported/Fufu_corriendo.png-8b3405e2e4ecd62ae8b0993b7095176e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/fufu_salto.png"
-dest_files=["res://.godot/imported/fufu_salto.png-798eae524de9753993d6422cecc16c62.ctex"]
+source_file="res://assets/sprites/player/Fufu_corriendo.png"
+dest_files=["res://.godot/imported/Fufu_corriendo.png-8b3405e2e4ecd62ae8b0993b7095176e.ctex"]
 
 [params]
 
