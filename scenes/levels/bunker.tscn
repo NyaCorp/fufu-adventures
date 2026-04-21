@@ -30,8 +30,7 @@ position = Vector2(-3094, 1339)
 camera = NodePath("camera2d")
 
 [node name="camera2d" type="Camera2D" parent="Player" unique_id=1157507851]
-offset = Vector2(0, -60)
-zoom = Vector2(2.5, 2.5)
+zoom = Vector2(2.3, 2.3)
 process_callback = 0
 limit_enabled = false
 limit_left = -400
@@ -41,6 +40,7 @@ limit_bottom = 1100
 limit_smoothed = true
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0
+drag_vertical_enabled = true
 
 [node name="puerta" type="Sprite2D" parent="." unique_id=1124055003]
 position = Vector2(64.99999, -63)

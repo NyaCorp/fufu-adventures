@@ -8,7 +8,6 @@ const JUMP_VELOCITY = -280.0
 const SPEED = 200.0
 
 var isDoubleJump = true
-var isJump = false
 
 func _physics_process(delta: float) -> void:
 	player_movement(delta)
@@ -32,7 +31,7 @@ func player_movement(delta: float):
 	var direction := Input.get_axis("ui_left", "ui_right")
 	if direction:
 		velocity.x = direction * SPEED
-		sprite.flip_h = direction < 1 
+		sprite.flip_h = direction < 0
 		
 		animation.play("run")
 	else:
