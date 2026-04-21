@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b77y4lbwhjyqe"]
 
 [ext_resource type="Script" uid="uid://0lhffmywe5kj" path="res://scripts/characters/player.gd" id="1_yewv4"]
-[ext_resource type="Texture2D" uid="uid://chpi4xadgxc4o" path="res://assets/sprites/prueba.png" id="2_yewv4"]
+[ext_resource type="Texture2D" uid="uid://cq5m75uqb8854" path="res://assets/sprites/player/Fufu_pose_descanso.png" id="2_yewv4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rp718"]
 size = Vector2(16, 29)
