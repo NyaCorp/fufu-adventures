@@ -230,12 +230,13 @@ script = ExtResource("1_yewv4")
 
 [node name="spr" type="Sprite2D" parent="." unique_id=472104206]
 z_index = 1
-scale = Vector2(0.6640625, 0.6657021)
+scale = Vector2(0.8, 0.802)
 texture = ExtResource("2_yewv4")
 hframes = 4
 
 [node name="col" type="CollisionShape2D" parent="." unique_id=374424005]
 position = Vector2(0, 1)
+scale = Vector2(1.2, 1.2)
 shape = SubResource("RectangleShape2D_rp718")
 
 [node name="animation" type="AnimationPlayer" parent="." unique_id=1235061293]
