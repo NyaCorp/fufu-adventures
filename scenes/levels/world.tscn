@@ -41,7 +41,7 @@ camera = NodePath("camera2d")
 
 [node name="camera2d" type="Camera2D" parent="Player" unique_id=356803377]
 offset = Vector2(0, -40)
-zoom = Vector2(2.5, 2.5)
+zoom = Vector2(1.8, 1.8)
 process_callback = 0
 limit_left = -103
 limit_top = -399

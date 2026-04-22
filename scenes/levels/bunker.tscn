@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b6u0n5keoof2f" path="res://assets/sprites/square.png" id="1_nkh1m"]
 [ext_resource type="PackedScene" uid="uid://b77y4lbwhjyqe" path="res://scenes/characters/player.tscn" id="2_shgnu"]
-[ext_resource type="Texture2D" uid="uid://di2iw7scpp5n3" path="res://assets/sprites/Gemini_Generated_Image_n95x11n95x11n95x.png" id="3_nkh1m"]
+[ext_resource type="PackedScene" uid="uid://bwedgoujfb38f" path="res://scenes/characters/test_enemy.tscn" id="3_nkh1m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0hol4"]
 texture = ExtResource("1_nkh1m")
@@ -31,7 +31,7 @@ camera = NodePath("camera2d")
 
 [node name="camera2d" type="Camera2D" parent="Player" unique_id=1543446528]
 offset = Vector2(0, -60)
-zoom = Vector2(2.2, 2.2)
+zoom = Vector2(1.8, 1.8)
 process_callback = 0
 limit_enabled = false
 limit_left = -400
@@ -48,4 +48,6 @@ modulate = Color(1, 1, 1, 0.25882354)
 z_index = -10
 position = Vector2(-708, 1563)
 scale = Vector2(2.754821, 2.754821)
-texture = ExtResource("3_nkh1m")
+
+[node name="TestEnemy" parent="." unique_id=284073310 instance=ExtResource("3_nkh1m")]
+position = Vector2(641, 568)

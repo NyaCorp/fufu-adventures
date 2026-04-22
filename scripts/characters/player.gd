@@ -1,6 +1,8 @@
 extends CharacterBody2D
 
+@onready var animation2: AnimationPlayer = $animation2
 @onready var animation: AnimationPlayer = $animation
+@onready var area_col: Area2D = $area_col
 @onready var sprite: Sprite2D = $spr
 @export var camera: Camera2D
 
@@ -49,3 +51,23 @@ func camera_movement():
 		camera.drag_vertical_offset = -1
 	else:
 		camera.drag_vertical_offset = 0
+
+func collide_with_enemy(enemy: CharacterBody2D):
+	animation2.play("enemy_col")
+	
+	set_collision_layer_value(2, false)
+	area_col.set_collision_layer_value(2, false)
+	enemy.set_collision_layer_value(3, false)
+	
+	var timer = get_tree().create_timer(2)
+	timer.timeout.connect(func(): 
+		set_collision_layer_value(2, true)
+		area_col.set_collision_layer_value(2, true)
+		enemy.set_collision_layer_value(3, true)
+		$animation2.play("RESET")
+	)
+
+func _on_area_col_body_entered(body: Node2D) -> void:
+	if body.is_in_group("enemy"):
+		var enemy = body as CharacterBody2D
+		collide_with_enemy(enemy)
