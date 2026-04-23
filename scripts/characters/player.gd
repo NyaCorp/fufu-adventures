@@ -50,8 +50,16 @@ func player_movement(delta: float):
 	if direction:
 		velocity.x = direction * SPEED
 		sprite.flip_h = direction < 0
+		
+		bullet_position.position.x = abs(bullet_position.position.x) * direction
+	
+		if direction < 0:
+			bullet_position.rotation_degrees = 180
+		else:
+			bullet_position.rotation_degrees = 0
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+
 
 # Handle shoot
 func shoot():
@@ -92,7 +100,7 @@ func collide_with_enemy(enemy: CharacterBody2D):
 		print("Al jugador le quedan " + str(Global.player_lives) + " vidas")
 	
 	var timer = get_tree().create_timer(2)
-	timer.timeout.connect(func(): 
+	timer.timeout.connect(func():
 		set_collision_layer_value(2, true)
 		area_col.set_collision_layer_value(2, true)
 		enemy.set_collision_layer_value(3, true)

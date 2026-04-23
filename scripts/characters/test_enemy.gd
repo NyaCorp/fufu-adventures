@@ -1,5 +1,7 @@
 extends CharacterBody2D
+class_name Enemy
 
+var lives = 3
 var speed = 100.0
 var direccion = 1
 
