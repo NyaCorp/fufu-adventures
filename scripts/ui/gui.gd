@@ -11,32 +11,22 @@ extends CanvasLayer
 var progress_count = 0
 
 func _ready() -> void:
-	hidden_press_e_layer()
-	hidden_progress_layer()
-	
-	Global.connect("show_press_e_layer", show_press_e_layer)
-	Global.connect("hidden_press_e_layer", hidden_press_e_layer)
-	
-	Global.connect("show_progress_layer", show_progress_layer)
-	Global.connect("hidden_progress_layer", hidden_progress_layer)
-	
-func show_press_e_layer():
-	press_e_layer.visible = true
-
-func hidden_press_e_layer():
 	press_e_layer.visible = false
-
-func show_progress_layer():
-	progress_layer.visible = true
-	
-	progress_timer.start()
-	decrease_progress_timer.stop()
-	
-func hidden_progress_layer():
 	progress_layer.visible = false
 	
-	decrease_progress_timer.start()
-	progress_timer.stop()
+	Global.connect("show_press_e_layer", func(): press_e_layer.visible = true)
+	Global.connect("hidden_press_e_layer", func(): press_e_layer.visible = false)
+	
+	Global.connect("show_progress_layer", func(): 
+		progress_layer.visible = true
+		progress_timer.start()
+		decrease_progress_timer.stop()
+	)
+	Global.connect("hidden_progress_layer", func():
+		progress_layer.visible = false
+		decrease_progress_timer.start()
+		progress_timer.stop()
+	)
 
 func _on_porgress_timer_timeout() -> void:
 	progress_count += 1
