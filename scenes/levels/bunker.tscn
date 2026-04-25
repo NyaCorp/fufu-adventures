@@ -144,7 +144,6 @@ texture_scale = 17.25
 position = Vector2(-533, 2911)
 
 [node name="canvas_module" type="CanvasModulate" parent="." unique_id=465818379]
-visible = false
 color = Color(0, 0, 0, 1)
 
 [node name="Enemy" type="Node" parent="." unique_id=240010724]
