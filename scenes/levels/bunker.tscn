@@ -29,8 +29,11 @@ physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 3
 sources/1 = SubResource("TileSetAtlasSource_x4dmy")
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lfyvx"]
+load_path = "res://.godot/imported/square.png-0884e5a4bbd423d2d9ee2545b010aedc.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0hol4"]
-texture = ExtResource("1_nkh1m")
+texture = SubResource("CompressedTexture2D_lfyvx")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
