@@ -1,6 +1,5 @@
 [gd_scene format=4 uid="uid://cr88bnl1a48x6"]
 
-[ext_resource type="Texture2D" uid="uid://b6u0n5keoof2f" path="res://assets/sprites/square.png" id="1_nkh1m"]
 [ext_resource type="Texture2D" uid="uid://bhycxp8vslbp0" path="res://assets/sprites/bunker.png" id="2_p0exc"]
 [ext_resource type="PackedScene" uid="uid://b77y4lbwhjyqe" path="res://scenes/characters/player.tscn" id="2_shgnu"]
 [ext_resource type="PackedScene" uid="uid://bwedgoujfb38f" path="res://scenes/characters/test_enemy.tscn" id="3_nkh1m"]
@@ -22,8 +21,11 @@ texture = ExtResource("5_v5v2x")
 [sub_resource type="TileSet" id="TileSet_krre7"]
 sources/1 = SubResource("TileSetAtlasSource_x4dmy")
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lfyvx"]
+load_path = "res://.godot/imported/square.png-0884e5a4bbd423d2d9ee2545b010aedc.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0hol4"]
-texture = ExtResource("1_nkh1m")
+texture = SubResource("CompressedTexture2D_lfyvx")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
