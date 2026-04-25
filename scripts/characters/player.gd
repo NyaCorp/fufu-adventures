@@ -3,6 +3,7 @@ class_name Player
 
 @onready var bullet_position: Marker2D = $BulletPosition
 @onready var bullet_timer: Timer = $BulletTimer
+@onready var shoot_sound: AudioStreamPlayer = $ShootSound
 
 @onready var animation2: AnimationPlayer = $animation2
 @onready var animation: AnimationPlayer = $animation
@@ -76,6 +77,7 @@ func player_movement(delta: float):
 # Handle shoot
 func shoot():
 	isShooting = true
+	shoot_sound.play()
 	
 	var bullet = bullet_scene.instantiate()
 	bullet.global_position = bullet_position.global_position
@@ -101,11 +103,11 @@ func camera_movement():
 
 func collide_with_enemy(enemy: CharacterBody2D):
 	canShoot = false
+	$Explosion.play()
+	
 	set_collision_layer_value(2, false)
 	area_col.set_collision_layer_value(2, false)
 	enemy.set_collision_layer_value(3, false)
-	
-	
 	
 	Global.player_lives -= 1
 	if Global.player_lives <= 0:
@@ -132,7 +134,7 @@ func _on_game_over():
 
 func _on_area_col_body_entered(body: Node2D) -> void:
 	if body.is_in_group("cables"):
-		print("regresar al checkpoint")
+		$Explosion.play()
 		position = currentCheckpoint.position
 
 	if body.is_in_group("enemy"):

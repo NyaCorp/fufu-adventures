@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cahbwqtd6p2l6"]
+
+[ext_resource type="Script" uid="uid://rubemu7svhk0" path="res://scripts/global.gd" id="1_cmiys"]
+[ext_resource type="AudioStream" uid="uid://crwuhl42fko" path="res://assets/sounds/Asteroid_Field_Dash.mp3" id="1_xvru0"]
+[ext_resource type="AudioStream" uid="uid://b1gk7n74nm3h" path="res://assets/sounds/freesound_community-dead-8bit-41400.mp3" id="3_yspue"]
+
+[node name="GlobalNode" type="Node" unique_id=756423830]
+script = ExtResource("1_cmiys")
+
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=500960325]
+stream = ExtResource("1_xvru0")
+volume_db = -10.0
+autoplay = true
+parameters/looping = true
+
+[node name="GameOverSound" type="AudioStreamPlayer" parent="." unique_id=394628016]
+stream = ExtResource("3_yspue")

@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://mmevvbc8vkip" path="res://assets/sprites/player/Fufu_brincando.png" id="3_dyp2m"]
 [ext_resource type="Texture2D" uid="uid://k3t6ye1ff7v3" path="res://assets/sprites/player/Fufu_disparando.png" id="5_atpat"]
 [ext_resource type="Texture2D" uid="uid://c1nvnqwm0r4xh" path="res://assets/sprites/player/Fufu_disparando_corriendo.png" id="5_kqtwu"]
+[ext_resource type="AudioStream" uid="uid://cjtlqcyd7d64q" path="res://assets/sounds/ahmed_abdulaal-laser-312360.mp3" id="7_6eyoc"]
+[ext_resource type="AudioStream" uid="uid://bw8ktjgdq4sbm" path="res://assets/sounds/u_b32baquv5u-explosion-9-340460.mp3" id="8_eojnx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rp718"]
 size = Vector2(10, 18)
@@ -440,6 +442,12 @@ position = Vector2(8, 3)
 [node name="BulletTimer" type="Timer" parent="." unique_id=952751465]
 wait_time = 0.23
 one_shot = true
+
+[node name="ShootSound" type="AudioStreamPlayer" parent="." unique_id=1644454491]
+stream = ExtResource("7_6eyoc")
+
+[node name="Explosion" type="AudioStreamPlayer" parent="." unique_id=752527434]
+stream = ExtResource("8_eojnx")
 
 [connection signal="area_entered" from="area_col" to="." method="_on_area_col_area_entered"]
 [connection signal="body_entered" from="area_col" to="." method="_on_area_col_body_entered"]

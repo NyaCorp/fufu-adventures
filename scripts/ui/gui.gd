@@ -56,6 +56,7 @@ func _on_porgress_timer_timeout() -> void:
 	
 	if progress_count >= 100:
 		Global.trigger_saved_data()
+		$SavedDataCompleted.play()
 		progress_timer.stop()
 
 func _on_decrease_progreess_timer_timeout() -> void:

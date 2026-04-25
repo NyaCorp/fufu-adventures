@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cgrc8tprbsp0p" path="res://scripts/ui/gui.gd" id="1_fjuye"]
 [ext_resource type="Texture2D" uid="uid://bkyshs87tv8oc" path="res://assets/sprites/VIDA_DE_FUFU.png" id="2_khrik"]
+[ext_resource type="AudioStream" uid="uid://civ8483p4ufdg" path="res://assets/sounds/freesound_community-game-start-6104.mp3" id="3_qu8lo"]
 
 [sub_resource type="Animation" id="Animation_khrik"]
 length = 0.001
@@ -267,6 +268,9 @@ offset_top = 25.0
 offset_right = 65.528
 offset_bottom = 90.0
 texture = SubResource("AtlasTexture_g2dwb")
+
+[node name="SavedDataCompleted" type="AudioStreamPlayer" parent="." unique_id=1080857277]
+stream = ExtResource("3_qu8lo")
 
 [connection signal="timeout" from="ProgressLayer/PorgressTimer" to="." method="_on_porgress_timer_timeout"]
 [connection signal="timeout" from="ProgressLayer/DecreaseProgreessTimer" to="." method="_on_decrease_progreess_timer_timeout"]
