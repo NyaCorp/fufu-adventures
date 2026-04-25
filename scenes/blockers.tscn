@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dg8vl8dymknkq"]
+
+[ext_resource type="Script" uid="uid://bc1dqwrkny6r2" path="res://scripts/blockers.gd" id="1_tmmvw"]
+[ext_resource type="Texture2D" uid="uid://bhycxp8vslbp0" path="res://assets/sprites/bunker.png" id="1_tslm0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5j0pg"]
+size = Vector2(20, 130)
+
+[node name="Blockers" type="StaticBody2D" unique_id=855512155]
+script = ExtResource("1_tmmvw")
+
+[node name="spr" type="Sprite2D" parent="." unique_id=1963485063]
+position = Vector2(4.4703484e-07, 0)
+scale = Vector2(0.31250003, 2.0312502)
+texture = ExtResource("1_tslm0")
+
+[node name="col" type="CollisionShape2D" parent="." unique_id=935917293]
+shape = SubResource("RectangleShape2D_5j0pg")

@@ -37,7 +37,7 @@ func _on_porgress_timer_timeout() -> void:
 	progress_label.text = str(progress_count) + "%"
 	
 	if progress_count >= 100:
-		Global.isSavedData = true
+		Global.trigger_saved_data()
 		progress_timer.stop()
 
 func _on_decrease_progreess_timer_timeout() -> void:
