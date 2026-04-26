@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://doeqoq8t7notk"]
 
 [ext_resource type="Script" uid="uid://caau8p4o0svnq" path="res://scripts/meta.gd" id="1_keyex"]
-[ext_resource type="Texture2D" uid="uid://ckf3vbmfikj2p" path="res://assets/sprites/escaner.png" id="2_keyex"]
+[ext_resource type="Texture2D" uid="uid://ckf3vbmfikj2p" path="res://assets/terrain/escaner.png" id="2_keyex"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_omeyu"]
 size = Vector2(59, 54)

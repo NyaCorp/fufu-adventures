@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://pql03f6tbitq"]
 
 [ext_resource type="Script" uid="uid://bytwss2v78u1d" path="res://scripts/ui/menu.gd" id="1_wedc3"]
-[ext_resource type="Texture2D" uid="uid://c0cfu5arxn6a" path="res://assets/sprites/player/Fufu_corriendo.png" id="2_wedc3"]
+[ext_resource type="Texture2D" uid="uid://c0cfu5arxn6a" path="res://assets/sprites/player/run/Fufu_corriendo.png" id="2_wedc3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8vqvp"]
 atlas = ExtResource("2_wedc3")
@@ -58,10 +58,10 @@ anchor_left = 0.13800001
 anchor_top = 0.46500003
 anchor_right = 0.34300002
 anchor_bottom = 0.82900006
-offset_left = 0.023986816
-offset_top = 0.6799927
-offset_right = -0.13601685
-offset_bottom = 0.8079834
+offset_left = 2.0239868
+offset_top = 1.6799927
+offset_right = 1.8639832
+offset_bottom = 1.8079834
 texture = SubResource("AtlasTexture_8vqvp")
 
 [node name="TextureRect2" type="TextureRect" parent="." unique_id=661417019]
@@ -71,10 +71,42 @@ anchor_left = 0.62600005
 anchor_top = 0.46100003
 anchor_right = 0.83100003
 anchor_bottom = 0.82600003
-offset_left = 1.8479614
-offset_top = 0.27197266
-offset_right = 1.6879883
-offset_bottom = -0.24804688
+offset_left = 28.847961
+offset_top = 2.2719727
+offset_right = 28.687988
+offset_bottom = 1.7519531
 texture = SubResource("AtlasTexture_7w7rl")
+
+[node name="CreditsBtn" type="Button" parent="." unique_id=1626863013]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.425
+anchor_top = 0.6
+anchor_right = 0.575
+anchor_bottom = 0.6
+offset_left = 1.3999939
+offset_top = -15.800018
+offset_right = 1.4000244
+offset_bottom = 26.199982
+text = "CREDITS"
+
+[node name="HistoryLabel" type="Label" parent="." unique_id=1750292315]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.85
+anchor_right = 0.9
+anchor_bottom = 0.95
+offset_left = 1.800003
+offset_top = -5.799988
+offset_right = 2760.2002
+offset_bottom = 358.40002
+scale = Vector2(0.25, 0.25)
+theme_override_font_sizes/font_size = 50
+text = "In the year 2432, contact with the mining colony was abruptly severed. Humanity vanished without a trace, leaving behind decades of research and vital data.
+
+You are Fufu, an advanced robotic recovery unit sent to this desolate world. Your mission is to infiltrate the abandoned complexes, retrieve the lost data cores, and reach the Great Communications Tower to transmit the information back to Earth."
+horizontal_alignment = 1
+autowrap_mode = 3
 
 [connection signal="pressed" from="PlayBtn" to="." method="_on_play_btn_pressed"]

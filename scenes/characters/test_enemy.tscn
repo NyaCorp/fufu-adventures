@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bwedgoujfb38f"]
 
 [ext_resource type="Script" uid="uid://dsgpyr27o6age" path="res://scripts/characters/test_enemy.gd" id="1_6x6pk"]
-[ext_resource type="Texture2D" uid="uid://mbeukbgdqk77" path="res://assets/sprites/Enemigo_de_fufu_corrompido.png" id="2_6x6pk"]
+[ext_resource type="Texture2D" uid="uid://mbeukbgdqk77" path="res://assets/sprites/enemy/Enemigo_corrompido.png" id="2_6x6pk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uvd4k"]
 size = Vector2(10, 11)

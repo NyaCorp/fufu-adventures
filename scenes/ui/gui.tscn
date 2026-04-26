@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ckhbos7swgpya"]
 
 [ext_resource type="Script" uid="uid://cgrc8tprbsp0p" path="res://scripts/ui/gui.gd" id="1_fjuye"]
-[ext_resource type="Texture2D" uid="uid://bkyshs87tv8oc" path="res://assets/sprites/VIDA_DE_FUFU.png" id="2_khrik"]
+[ext_resource type="Texture2D" uid="uid://bkyshs87tv8oc" path="res://assets/hud/Vida.png" id="2_khrik"]
 [ext_resource type="AudioStream" uid="uid://civ8483p4ufdg" path="res://assets/sounds/freesound_community-game-start-6104.mp3" id="3_qu8lo"]
 
 [sub_resource type="Animation" id="Animation_khrik"]

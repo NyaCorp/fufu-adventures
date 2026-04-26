@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://pgxhasjc2oke"]
+
+[ext_resource type="Script" uid="uid://cy1l5fliivjy4" path="res://scripts/ui/credits.gd" id="1_jkvjv"]
+[ext_resource type="Texture2D" uid="uid://mbeukbgdqk77" path="res://assets/sprites/enemy/Enemigo_corrompido.png" id="1_oap8i"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jkvjv"]
+atlas = ExtResource("1_oap8i")
+region = Rect2(30.665596, 0.50626373, 32.65306, 31.073078)
+
+[node name="Credits" type="Control" unique_id=1165776362]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jkvjv")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=354571717]
+layout_mode = 0
+offset_left = 874.0
+offset_top = 357.0
+offset_right = 1125.0
+offset_bottom = 608.8715
+texture = SubResource("AtlasTexture_jkvjv")
+
+[node name="ReturnBtn" type="Button" parent="." unique_id=807402035]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.425
+anchor_top = 0.6
+anchor_right = 0.575
+anchor_bottom = 0.6
+offset_left = -441.6
+offset_top = 185.19998
+offset_right = -441.59998
+offset_bottom = 227.19998
+text = "RETURN
+"
+
+[node name="label" type="Label" parent="." unique_id=2052983285]
+layout_mode = 0
+offset_left = 53.000004
+offset_top = 46.0
+offset_right = 1623.0
+offset_bottom = 702.0
+scale = Vector2(0.6, 0.6)
+theme_override_font_sizes/font_size = 50
+text = "Development Team
+
+Camila (Dxsun) - Lead Artist and Sprite Designer
+Jonathan (Yugi) - Developer, Level Design and Technical Artist
+Humberto Daniel (Kik) - Developer and Level Design
+
+Sound & SFX
+Pixabay Community
+Freesound_community Pixabay"

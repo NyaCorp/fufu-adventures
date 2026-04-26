@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://b77y4lbwhjyqe"]
 
 [ext_resource type="Script" uid="uid://0lhffmywe5kj" path="res://scripts/characters/player.gd" id="1_yewv4"]
-[ext_resource type="Texture2D" uid="uid://cq5m75uqb8854" path="res://assets/sprites/player/Fufu_pose_descanso.png" id="2_yewv4"]
-[ext_resource type="Texture2D" uid="uid://c0cfu5arxn6a" path="res://assets/sprites/player/Fufu_corriendo.png" id="3_76oj4"]
-[ext_resource type="Texture2D" uid="uid://mmevvbc8vkip" path="res://assets/sprites/player/Fufu_brincando.png" id="3_dyp2m"]
-[ext_resource type="Texture2D" uid="uid://k3t6ye1ff7v3" path="res://assets/sprites/player/Fufu_disparando.png" id="5_atpat"]
-[ext_resource type="Texture2D" uid="uid://c1nvnqwm0r4xh" path="res://assets/sprites/player/Fufu_disparando_corriendo.png" id="5_kqtwu"]
+[ext_resource type="Texture2D" uid="uid://cq5m75uqb8854" path="res://assets/sprites/player/idle/Fufu_pose_descanso.png" id="2_yewv4"]
+[ext_resource type="Texture2D" uid="uid://c0cfu5arxn6a" path="res://assets/sprites/player/run/Fufu_corriendo.png" id="3_76oj4"]
+[ext_resource type="Texture2D" uid="uid://mmevvbc8vkip" path="res://assets/sprites/player/jump/Fufu_brincando.png" id="3_dyp2m"]
+[ext_resource type="Texture2D" uid="uid://k3t6ye1ff7v3" path="res://assets/sprites/player/attack/Fufu_disparando.png" id="5_atpat"]
+[ext_resource type="Texture2D" uid="uid://c1nvnqwm0r4xh" path="res://assets/sprites/player/attack/Fufu_disparando_corriendo.png" id="5_kqtwu"]
 [ext_resource type="AudioStream" uid="uid://cjtlqcyd7d64q" path="res://assets/sounds/ahmed_abdulaal-laser-312360.mp3" id="7_6eyoc"]
 [ext_resource type="AudioStream" uid="uid://bw8ktjgdq4sbm" path="res://assets/sounds/u_b32baquv5u-explosion-9-340460.mp3" id="8_eojnx"]
 
