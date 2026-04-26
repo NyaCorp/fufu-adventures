@@ -108,5 +108,6 @@ func _on_game_over():
 	Global.trigger_hidden_press_e_layer()
 	Global.trigger_hidden_progress_layer()
 	
+	final_stage_layer.visible = false
 	game_over_layer.visible = true
 	game_over_animation.play("game_over")
