@@ -7,4 +7,6 @@ func _on_play_btn_pressed() -> void:
 	await Fade.end_fade()
 
 func _on_credits_btn_pressed() -> void:
+	await Fade.start_fade()
 	get_tree().change_scene_to_file("res://scenes/ui/credits.tscn")
+	await Fade.end_fade()

@@ -110,3 +110,4 @@ horizontal_alignment = 1
 autowrap_mode = 3
 
 [connection signal="pressed" from="PlayBtn" to="." method="_on_play_btn_pressed"]
+[connection signal="pressed" from="CreditsBtn" to="." method="_on_credits_btn_pressed"]

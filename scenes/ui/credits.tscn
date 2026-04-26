@@ -55,3 +55,5 @@ Humberto Daniel (Kik) - Developer and Level Design
 Sound & SFX
 Pixabay Community
 Freesound_community Pixabay"
+
+[connection signal="pressed" from="ReturnBtn" to="." method="_on_return_btn_pressed"]
