@@ -8,7 +8,7 @@ func _process(_delta: float) -> void:
 		Global.trigger_hidden_press_e_layer()
 
 func _on_meta_body_entered(body: Node2D) -> void:
-	if body as Player:
+	if body as Player and Global.canWin:
 		Global.trigger_show_press_e_layer()
 		Global.trigger_hidden_progress_layer()
 		
