@@ -9,6 +9,8 @@ signal saved_data
 signal game_over
 signal new_game
 
+signal can_double_jump
+
 var player_lives = 3
 var isSavedData = false
 var spawn_destino: String = ""
@@ -24,6 +26,7 @@ func trigger_show_progress_layer(): show_progress_layer.emit()
 func trigger_hidden_progress_layer(): hidden_progress_layer.emit()
 
 func trigger_saved_data(): saved_data.emit(); isSavedData = true
+func trigger_can_double_jump(): can_double_jump.emit() 
 func trigger_game_over(): game_over.emit()
 func trigger_new_game(): new_game.emit()
 
