@@ -64,6 +64,13 @@ func _on_porgress_timer_timeout() -> void:
 		Global.trigger_saved_data()
 		$SavedDataCompleted.play()
 		progress_timer.stop()
+		if Global.canWin:
+			await Fade.start_fade()
+			get_tree().change_scene_to_file("res://scenes/ui/menu.tscn")
+			await Fade.end_fade()
+		
+		progress_count = 0
+		
 
 func _on_decrease_progreess_timer_timeout() -> void:
 	progress_count -= 1
