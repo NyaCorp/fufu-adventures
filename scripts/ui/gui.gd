@@ -68,12 +68,12 @@ func _on_decrease_progreess_timer_timeout() -> void:
 		decrease_progress_timer.stop()
 
 func _on_play_btn_pressed() -> void:
-	await Fade.fade(1.0).finished
+	await Fade.start_fade()
 	
 	Global.trigger_new_game()
 	get_tree().reload_current_scene()
 	
-	await Fade.fade(0.0).finished
+	await Fade.end_fade()
 
 func _on_game_over():
 	Global.trigger_hidden_press_e_layer()
