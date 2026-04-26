@@ -19,7 +19,7 @@ func _ready() -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	if player_range and event.is_action_pressed("ui_up"):
-		_cambiar_escena()
+		_change_scene()
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
